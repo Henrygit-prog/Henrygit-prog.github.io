@@ -50,6 +50,16 @@
         color: #596057;
     }
 
+    .site-nav {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+
+    .site-nav a {
+        margin: 0;
+    }
+
     .table-wrap {
         overflow-x: auto;
         border: 1px solid #d5d9d3;
@@ -116,6 +126,17 @@
         font-weight: bold;
     }
 
+    #motms ol {
+        margin: 0;
+        padding-left: 24px;
+        font-size: 1.1rem;
+    }
+
+    #motms li {
+        padding: 10px 4px;
+        border-bottom: 1px solid #d5d9d3;
+    }
+
     @media (max-width: 600px) {
         main {
             padding: 24px 16px 36px;
@@ -134,9 +155,14 @@
 <body>
 <main>
 <h1>GCAFC Gs Stats</h1>
+<nav class="site-nav" aria-label="Page sections">
+    <a href="#top-scorers">Top Scorers</a>
+    <a href="Motms.html">MOTMs</a>
+    <a href="#fixtures">Fixtures</a>
+</nav>
 <img src="f8db55b0003889c644cf987e3a5e8813.jpeg" alt="GCAFC Gs team photo">
 
-<section>
+<section id="top-scorers">
     <h2>Top Scorers</h2>
     <p class="section-note">Goals and appearances, sorted by goals scored.</p>
     <div class="table-wrap">
@@ -239,7 +265,8 @@
     </div>
 </section>
 
-<section>
+
+<section id="fixtures">
     <h2>Fixtures</h2>
     <p>Check the latest league table and upcoming fixtures.</p>
     <a href="https://apps.dur.ac.uk/collegesport/public/team/1682">View league table and fixtures</a>
